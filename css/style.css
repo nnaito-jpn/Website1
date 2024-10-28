@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.firstpage{
+    background-image: url(../img/TempleBar.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 1535px;
+    height: 720px;
+}
+
+#Mainheader{
+    color:green;
+    text-align: center;
+    font-size: 80px;
+    font-style: italic;
+    font-weight: bold;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+}
+
+.tbl{
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    font-size: 20px;
+    background-color: white;
+}
+
+.btns {
+    position: absolute;
+    top: 200px;
+    left: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: fit-content;
+}
+
+.btn1{
+    background-image: url(../img/Wo++Certificate.webp);
+    background-color:rgba(255,255,255,0.7);
+    background-blend-mode:lighten;
+    background-position: -30px -90px;
+    background-size:120% auto;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    padding: 20px 20px;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #000;
+    cursor:pointer;
+}
+
+.btn1:focus {
+    position: relative;
+    z-index: 3;
+}
+
+.btn2{
+    background-image: url(../img/emerald.jpg);
+    background-color:rgba(255,255,255,0.7);
+    background-blend-mode:lighten;
+    /* background-position: -30px -90px; */
+    background-size:100% auto;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    padding: 35px 20px;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #000;
+    cursor:pointer;
+}
+
+.btn3{
+    background-image: url(../img/JobImg.jpg);
+    background-color:rgba(255,255,255,0.7);
+    background-blend-mode:lighten;
+    /* background-position: -30px -90px; */
+    background-size:100% auto;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    padding: 20px 20px;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #000;
+    cursor:pointer;
+}
