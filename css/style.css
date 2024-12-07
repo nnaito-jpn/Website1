@@ -1,104 +1,221 @@
 @charset "UTF-8";
 
-body{
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+body {
     margin: 0;
     padding: 0;
-}
-
-.firstpage{
     background-image: url(../img/TempleBar.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 1535px;
-    height: 720px;
+    background-color: rgba(240, 236, 13, 0.993);
+    background-blend-mode: lighten;
+    background-size: 1560px 800px;
+    background-repeat: no-repeat;
+
 }
 
-#Mainheader{
-    color:green;
-    text-align: center;
-    font-size: 80px;
+#Mainheader {
+    text-align: right;
+    color: green;
+    font-size: 5rem;
+    flex: 5;
     font-style: italic;
     font-weight: bold;
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: black;
 }
 
-.tbl{
-    position: absolute;
-    top: 200px;
-    left: 150px;
+.Lagcha {
+    flex: 1;
+}
+
+#form {
+    display: flex;
+    max-height: 20px;
+    flex-direction: column;
+    align-items: end;
+}
+
+.mainblock{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.secr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inquiry{
+    margin-top: 50px;
+    width: 700px;
+}
+
+.adressline{
+    margin-top: 10px;
+}
+
+.adressline input{
+    display: block;
+    margin: 5px;
+    width: 100%;
+}
+
+.adressline input{
+    display: block;
+    margin: 5px;
+    width: 100%;
+}
+
+input:nth-of-type(3){
+    margin-bottom: 10px;
+}
+
+table{
+    border-collapse: collapse;
+    width: auto;
+}
+
+.tbl {
     font-size: 20px;
     background-color: white;
+    border-radius: 20px;
+    border: black solid 2px;
+    width: 700px;
+    height: auto;
+}
+
+th,td {
+    border: black solid 2px;
+    width:  700px;
 }
 
 .btns {
-    position: absolute;
-    top: 200px;
-    left: 1000px;
     display: flex;
     flex-direction: column;
     gap: 1em;
     width: fit-content;
+    margin-left: 100px;
 }
 
-.btn1{
+.btn1 {
     background-image: url(../img/Wo++Certificate.webp);
-    background-color:rgba(255,255,255,0.7);
-    background-blend-mode:lighten;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-blend-mode: lighten;
     background-position: -30px -90px;
-    background-size:120% auto;
+    background-size: 120% auto;
     background-repeat: no-repeat;
     border-radius: 40px;
     padding: 20px 20px;
     font-size: 35px;
     font-style: italic;
     font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border: 5px solid #000;
-    cursor:pointer;
+    cursor: pointer;
+    height: 160px;
 }
 
-.btn1:focus {
-    position: relative;
-    z-index: 3;
-}
-
-.btn2{
+.btn2 {
     background-image: url(../img/emerald.jpg);
-    background-color:rgba(255,255,255,0.7);
-    background-blend-mode:lighten;
-    /* background-position: -30px -90px; */
-    background-size:100% auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-blend-mode: lighten;
+    background-size: 100% auto;
     background-repeat: no-repeat;
     border-radius: 40px;
     padding: 35px 20px;
     font-size: 35px;
     font-style: italic;
     font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border: 5px solid #000;
-    cursor:pointer;
+    cursor: pointer;
+    height: 160px;
 }
 
-.btn3{
+.btn3 {
     background-image: url(../img/JobImg.jpg);
-    background-color:rgba(255,255,255,0.7);
-    background-blend-mode:lighten;
-    /* background-position: -30px -90px; */
-    background-size:100% auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-blend-mode: lighten;
+    background-size: 100% auto;
     background-repeat: no-repeat;
     border-radius: 40px;
     padding: 20px 20px;
     font-size: 35px;
     font-style: italic;
     font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border: 5px solid #000;
-    cursor:pointer;
+    cursor: pointer;
+    height: 160px;
+}
+
+.btn1:hover, .btn2:hover, .btn3:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width:760px) {
+
+    #Mainheader {
+        display: flex;
+        text-align: center;
+        font-size:3rem;
+    }
+
+    .mainblock {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .secr{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .btns {
+        padding: 0;
+        margin: 40px 0 0 0;
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+    
+    .btns button{
+        font-size: 20px;
+        width:200px;
+    }
+    
+}
+
+@media (min-width:761px) and (max-width:1400px) {
+    #Mainheader {
+        text-align: center;
+        font-size:3rem;
+    }
+
+    .mainblock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btns {
+        padding: 0;
+        margin: 40px 0 0 0;
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+    
+    .btns button{
+        font-size: 20px;
+        width:200px;
+    }
+    
 }

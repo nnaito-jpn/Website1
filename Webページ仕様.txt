@@ -1,0 +1,7 @@
+ページ切り替えの方法
+案1
+HTML
+valueの値を選択した値に変更←onChangeでvalueに選択に応じたhtmlを呼び出す
+scriptでhtmlを呼び出す
+
+Javascript
